@@ -1,13 +1,21 @@
 # Leonida Atlas
 
-Explore six named regions, find the nearest pin and build a multi-stop itinerary.
+**Plan the stops before the run.** Pick a destination, check its nearest neighbour and build a multi-stop itinerary on a map you control.
 
-## Quick start
+![Illustrated practice atlas used by the route planner](map.png)
 
-Open `index.html` in a browser. Click the map or choose a destination, then add a stop.
+## Try a three-stop route
 
-## Using your own material
+[Download the atlas](https://github.com/Berserk-hub150/gta6-leonida-atlas/archive/refs/heads/main.zip), extract it and open `index.html`. Pick **Vice City**, add a stop, then add **Grassrivers** and **Port Gellhorn**. The line and total update with each stop. **Undo stop** removes the last leg.
 
-Use “Use a gameplay map” to import your own image and a JSON file in the format of pins.json. Pin coordinates are normalized to the map dimensions. Distances are straight-line atlas pixels. The sample does not provide in-game navigation. Source of region names: https://www.rockstargames.com/VI
+## Bring your own map
 
-Independent fan project. Grand Theft Auto is a trademark of its respective owners.
+Open **Use a gameplay map** and select an image plus a pin file following [pins.json](pins.json). Each pin has a name and normalized `x` and `y` coordinates. A point halfway across and a quarter down is `{"name":"Meeting point","x":0.5,"y":0.25}`.
+
+The six region names come from Rockstar. Their positions on the bundled practice map are illustrative. Distances measure straight lines in atlas pixels. [Official GTA VI site](https://www.rockstargames.com/VI)
+
+Want to turn that same map into a guessing game? Load it in [Leonida Guesser](https://github.com/Berserk-hub150/gta6-leonida-guesser).
+
+---
+
+[Explore the GTA VI project collection](https://github.com/Berserk-hub150/gta6-resource-index) · Independent fan project. Grand Theft Auto is a trademark of its respective owners.
